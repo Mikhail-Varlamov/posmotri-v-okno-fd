@@ -17,7 +17,7 @@ body {
   justify-content: center;
   align-items: center;
   width: 1200px;
-  min-height: 100%;
+  min-height: 100vh;
   margin: 0 auto;
   color: #fff;
   font-family: "Fira Sans Condensed", sans-serif;
