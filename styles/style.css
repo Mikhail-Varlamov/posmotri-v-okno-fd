@@ -20,7 +20,7 @@ body {
   width: 1200px;
   min-height: 100%;
   margin: 0 auto;
-  padding-top: 7px;
+  padding-top: 4px;
   color: #fff;
   font-family: "Fira Sans Condensed", sans-serif;
   font-size: 18px;
@@ -69,13 +69,12 @@ ol {
 .result {
   display: flex;
   flex-direction: column;
-  gap: 0;
+  gap: 11px;
   width: 711px;
 }
 
 .result__video-container {
   position: relative;
-  margin-top: 6px;
   width: 100%;
   height: 386px;
 }
@@ -83,7 +82,7 @@ ol {
 .result__video {
   width: 100%;
   height: 100%;
-  margin-top: -16px;
+  transform: translateY(-5px);
   object-fit: cover;
   object-position: center;
 }
@@ -186,13 +185,12 @@ ol {
 .content__details {
   display: flex;
   flex-direction: column;
-  gap: 23px;
+  gap: 21px;
   width: 399px;
   margin-top: 7px;
 }
 
 .title {
-  margin-top: -3px;
   font-family: Oswald, sans-serif;
   font-size: 75px;
   font-weight: 700;
