@@ -225,6 +225,7 @@ ol {
 }
 
 .content__card-link {
+  position: relative;
   display: block;
   color: inherit;
   text-decoration: none;
@@ -246,7 +247,15 @@ ol {
 }
 
 .content__card-link:focus-visible {
-  outline: 1px solid #fff;
+  outline: none;
+}
+
+.content__card-link:focus-visible::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border: 1px solid #fff;
+  pointer-events: none;
 }
 
 .content__video-card {
@@ -288,8 +297,8 @@ ol {
 }
 
 .button {
-  border: none;
-  outline: 1px solid currentColor;
+  position: relative;
+  border: 1px solid currentColor;
   color: inherit;
   font: inherit;
   font-weight: 700;
@@ -323,8 +332,15 @@ ol {
 }
 
 .button:focus-visible {
-  outline: 1px solid #fff;
-  outline-offset: 1px;
+  outline: none;
+}
+
+.button:focus-visible::after {
+  content: "";
+  position: absolute;
+  inset: -2px;
+  border: 1px solid #fff;
+  pointer-events: none;
 }
 
 .custom-scrollbar::-webkit-scrollbar {
